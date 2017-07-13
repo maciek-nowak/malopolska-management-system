@@ -75,7 +75,7 @@ def get_keyword_regions(keyword):
     for region in Region.regions:
         if keyword in region.name:
             keyword_regions.append([region.name, region.area_type])
-    keyword_regions.sort()
+    keyword_regions.sort(key=lambda x: (x[0].lower(), x[1]))
     return keyword_regions
 
 
