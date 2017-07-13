@@ -1,8 +1,8 @@
-from controllers import voivodeship_controller
+from controllers import region_controller
 
 
 def main():
-    voivodeship_controller.start_controller()
+    region_controller.start_controller()
 
 
 if __name__ == '__main__':
