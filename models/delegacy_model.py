@@ -1,7 +1,7 @@
-from models.elementary_region_model import ElementaryRegion
+from models.community_model import Community
 
 
-class Delegacy(ElementaryRegion):
+class Delegacy(Community):
     """
     Attributes:
         name (str)

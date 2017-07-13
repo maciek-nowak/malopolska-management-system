@@ -6,7 +6,6 @@ class RuralArea(ElementaryRegion):
     Attributes:
         name (str)
         administrative_number (int)
-        voivodeship (Voivodeship)
         county (CountyArea)
         community (Community)
         area_type (str)

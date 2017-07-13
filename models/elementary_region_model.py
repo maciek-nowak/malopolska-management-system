@@ -1,19 +1,17 @@
-class ElementaryRegion:
+from models.region_model import Region
+
+
+class ElementaryRegion(Region):
     """
     Attributes:
         name (str)
         administrative_number (int)
-        voivodeship (Voivodeship)
-        county (CountyArea)
         community (Community)
         area_type (str)
     """
 
     area_type = ''
 
-    def __init__(self, name, number, voivodeship, county, community):
-        self.name = name
-        self. administrative_number = number
-        self.voivodeship = voivodeship
-        self.county = county
+    def __init__(self, name, number, community):
+        super().__init__(name, number)
         self.community = community
